@@ -16,14 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const paymentMethod = document.querySelector('input[name="payment-method"]:checked');
         const paymentOption = paymentMethod ? paymentMethod.value : 'Not selected';
         const timestamp = new Date().toLocaleString();
-        const productId = selectedPackage ? selectedPackage.querySelector('.details h3').textContent + " Diamonds(MLBB)" : 'Not selected'; // Get the selected package ID
+        const productId = selectedPackage ? selectedPackage.querySelector('.details h3').textContent + " Diamonds(RCL)" : 'Not selected'; // Get the selected package ID
 
         // Construct the invoice message
         const invoiceMessage = `
                    
                    
                    
-*INVOICE BILL from* maniyaiofficial.store
+*INVOICE BILL from* (maniyaiofficial.store)
                  
 Time: ${timestamp} 
 ------------------------------------------------------
