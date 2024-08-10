@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const orderForm = document.querySelector('.order-info form');
     const totalPriceSpan = document.getElementById('total-price');
     const orderNowButton = document.querySelector('.order-now');
-    const qrCodeUrl = "https://i.ibb.co/Sdn6bL7/yutta-qr-code.jpg"; // Replace with your QR code image URL
+    const qrCodeUrl = "https://i.ibb.co/Pjmz1MW/maniyaiofficial-Qr.jpg" ; // Replace with your QR code image URL
 
     let selectedPackage = null;
 
@@ -16,29 +16,29 @@ document.addEventListener('DOMContentLoaded', () => {
         const paymentMethod = document.querySelector('input[name="payment-method"]:checked');
         const paymentOption = paymentMethod ? paymentMethod.value : 'Not selected';
         const timestamp = new Date().toLocaleString();
-        const productId = selectedPackage ? selectedPackage.querySelector('.details h3').textContent + " Diamonds" : 'Not selected'; // Get the selected package ID
+        const productId = selectedPackage ? selectedPackage.querySelector('.details h3').textContent + " Diamonds(MLBB)" : 'Not selected'; // Get the selected package ID
 
         // Construct the invoice message
         const invoiceMessage = `
                    
                    
                    
-*INVOICE BILL - Order from* yuttastore.com
+*INVOICE BILL from* maniyaiofficial.store
                  
 Time: ${timestamp} 
 ------------------------------------------------------
 *User ID*: (${userId})
 Zone ID: ${zoneId}
 *Product : ${productId}*
-*Paying From* : ${paymentOption}
+*Mode of Payment* : ${paymentOption}
 ------------------------------------------------------
 *Total: ${totalPrice}*
             
-*Payment Details* 
+*Payment Method* 
            
-UPI ID: q731109764@ybl
+1. UPI ID: ningthoujammaniyai4-2@okaxis
             
-[QR Code](${qrCodeUrl})
+2. [QR Code](${qrCodeUrl})
             
 Please make the payment to complete your order. Thank you!
         `;
@@ -61,4 +61,4 @@ Please make the payment to complete your order. Thank you!
             selectedPackage = packageElem; // Store the selected package
         });
     });
-});
+  });
